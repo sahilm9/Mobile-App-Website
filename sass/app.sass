@@ -1,0 +1,62 @@
+// IMPORT ALL SASS DIRECTORY FILES
+
+// import global variables
+@import "variables"
+// import global mixins
+@import "mixins"
+
+// import your directories
+@import "0-plugins/plugins-dir"
+@import "1-base/base-dir"
+@import "2-layouts/layouts-dir"
+@import "3-modules/modules-dir"
+
+// import any additional sass below...
+/* Additional sty$color-responsive
+@media (max-width: 991px)
+  .showcase-img
+    display: none
+
+@media (min-width: 768px) and (max-width: 991px)
+  .jumbotron img.app-btn
+    width: 30%
+
+@media (max-width: 768px)
+  .jumbotron img.app-btn
+    width: 30% !important
+
+@media (max-width: 500px)
+  .jumbotron
+    background-image: none
+    text-align: center
+    padding-left: 20px
+
+  #title-bar
+    background-color: $color-responsive
+
+  .navbar-default .navbar-brand
+    font-weight: bold
+    color: $color-responsive
+
+  .jumbotron img.app-btn
+    width: 50% !important
+
+  #feature ul li
+    font-size: 19px !important
+
+  footer p
+    text-align: center
+    padding-top: 10px
+
+@media (max-width: 650px)
+  #contact-us
+    input
+      width: 300px
+
+    textarea
+      width: 300px
+      margin: 0 auto
+
+@media (max-width: 767px)
+  #title-bar h1
+    padding-left: 13px
